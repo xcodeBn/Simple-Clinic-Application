@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/modify_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/modify_text"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarModify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="#FFF"
+            app:mcv_firstDayOfWeek="monday"
+            app:mcv_headerTextAppearance="@style/Month"
+            app:mcv_selectionColor="@color/colorPrimary"
+            app:mcv_showOtherDates="all"
+            app:mcv_weekDayTextAppearance="@style/Days"/>
+
+
+        <TextView
+            android:id="@+id/modify_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modify_btn"
+            android:layout_below="@+id/calendarModify"
+            android:layout_centerHorizontal="true"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btns"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/cons_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="@string/create_a_consultation"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/date_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cons_title"
+                android:padding="8dp"
+                android:text="Choose Date"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+
+                />
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarCons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="#FFF"
+                app:mcv_firstDayOfWeek="monday"
+                app:mcv_headerTextAppearance="@style/Month"
+                app:mcv_selectionColor="@color/colorPrimary"
+                app:mcv_showOtherDates="all"
+                app:mcv_weekDayTextAppearance="@style/Days"/>
+
+            <TextView
+                android:id="@+id/price_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calendarCons"
+                android:padding="8dp"
+                android:text="Enter Consultation Price: "
+                android:textColor="@color/black"
+                android:textSize="13sp"
+
+                />
+
+
+            <EditText
+                android:id="@+id/price_cons"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price_string"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="top"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+            <TextView
+                android:id="@+id/convert_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price_cons"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_btns"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:text="@string/convert_consultation"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.core.widget.NestedScrollView>

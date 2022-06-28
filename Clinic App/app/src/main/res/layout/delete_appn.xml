@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/logout_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:padding="10dp"
+            android:text="Are you sure you want to delete this appoinment?"
+            android:textColor="#000"
+            android:textSize="13sp"
+            />
+
+
+        <TextView
+            android:id="@+id/delete_Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logout_title_text"
+            android:padding="18dp"
+            android:text="@string/logout_yes"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:id="@+id/delete_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logout_title_text"
+            android:layout_toLeftOf="@+id/delete_Yes"
+            android:padding="18dp"
+            android:text="@string/logout_no"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+             />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

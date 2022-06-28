@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Health Care</string>
+    <string name="api">https://andriodstudio.000webhostapp.com/</string>
+
+    <string name="login_title_main_page">Login</string>
+    <string name="username_text_mainlogin">Username</string>
+    <string name="password_text_mainlogin">Password</string>
+    <string name="LoginBtn">Login</string>
+    <string name="consultations">Consultations</string>
+    <string name="appoinments">Appoinments</string>
+    <string name="make_appoinment">Make Appoinment</string>
+    <string name="delete_btn">Delete</string>
+    <string name="modify_btn">Modify</string>
+    <string name="convert_consultation">Convert</string>
+    <string name="logout_text_confirmation">Are you sure you want to log out?</string>
+    <string name="logout_yes">Yes</string>
+    <string name="logout_no">No</string>
+    <string name="modify_text">Modify patient\'s appointment Date:</string>
+    <string name="create_a_consultation">Create a Consultation:</string>
+    <string name="Error_login">Incorrect Username or Password </string>
+    <string name="loading_vf">Loading...</string>
+    <string name="doc_name">Dr. H.B.</string>
+</resources>
